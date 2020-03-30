@@ -6,6 +6,7 @@ import (
 	"time"
 
 	inimigo "github.com/igorfs10/TestGo/structs"
+	file "github.com/igorfs10/TestGo/utils"
 )
 
 // Inimigo : importação
@@ -17,8 +18,12 @@ func main() {
 	fmt.Println("My favorite number is", rand.Intn(10))
 	fmt.Println("Teste", time.Now())
 
-	var ola = Inimigo{0, "Rato", 5, 1, 1, 2, 0}
+	var ola Inimigo
 	ola.Nome = test
 
 	fmt.Println("Teste", ola.Nome)
+
+	var outroInimigo Inimigo
+	file.JSONToVar(&outroInimigo)
+	fmt.Println(outroInimigo)
 }
