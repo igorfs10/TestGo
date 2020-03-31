@@ -5,8 +5,8 @@ import (
 	"math/rand"
 	"time"
 
-	structs "github.com/igorfs10/TestGo/structs"
-	file "github.com/igorfs10/TestGo/utils"
+	"github.com/igorfs10/TestGo/structs"
+	"github.com/igorfs10/TestGo/utils"
 )
 
 // Inimigo : importação
@@ -27,11 +27,11 @@ func main() {
 	fmt.Println("Teste", ola.Nome)
 
 	var outroInimigo Inimigo
-	file.JSONToVar(&outroInimigo, "data/inimigos/rato.json")
+	utils.JSONToVar(&outroInimigo, "data/inimigos/rato.json")
 	fmt.Println(outroInimigo)
 
 	var per Personagem
-	file.JSONToVar(&per, "data/personagens/guerreiro.json")
+	utils.JSONToVar(&per, "data/personagens/guerreiro.json")
 
 	fmt.Println(per)
 }
