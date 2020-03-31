@@ -1,4 +1,4 @@
-package inimigo
+package structs
 
 // Inimigo : Struct que vai receber os dados do inimigo
 type Inimigo struct {

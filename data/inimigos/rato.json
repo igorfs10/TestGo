@@ -1,9 +1,9 @@
 {
-	"id": 10,
+	"id": 0,
 	"nome": "Rato",
 	"vida": 5,
 	"ataque": 1,
 	"defesa": 1,
 	"experiencia": 2,
-	"item": 20
+	"item": 1
 }
