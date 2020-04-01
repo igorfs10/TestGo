@@ -7,16 +7,16 @@ import (
 )
 
 // DataFolder : Pasta raíz para dados
-const DataFolder = "data/"
+const DataFolder string = "data/"
 
 // InimigoFolder : pasta de dados dos inimigos
-const InimigoFolder = "inimigos/"
+const InimigoFolder string = "inimigos/"
 
 // PersonagensFolder : pasta de dados dos inimigos
-const PersonagensFolder = "personagens/"
+const PersonagensFolder string = "personagens/"
 
 // ItensFolder : pasta de dados dos itens
-const ItensFolder = "itens/"
+const ItensFolder string = "itens/"
 
 // JSONToVar : Carrega um arquivo JSON e coloca numa variável. Ele usa o ponteiro da variável e o caminho do arquivo JSON.
 func JSONToVar(v interface{}, path string) {
