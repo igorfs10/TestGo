@@ -8,3 +8,6 @@ type Personagem struct {
 	Ataque int8   `json:"ataque"`
 	Defesa int8   `json:"defesa"`
 }
+
+// PersonagemGuerreiro : id do guerreio
+const PersonagemGuerreiro int8 = 0

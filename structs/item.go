@@ -6,3 +6,6 @@ type Item struct {
 	Nome      string `json:"nome"`
 	Descricao string `json:"descricao"`
 }
+
+// ItemPocao : id da pocao
+const ItemPocao int8 = 0
