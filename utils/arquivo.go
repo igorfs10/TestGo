@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/igorfs10/TestGo/structs"
+	"github.com/igorfs10/TestGo/consts"
 )
 
 const pastaData string = "data/"
@@ -39,18 +39,18 @@ func CriarCaminho(tipo int8, id int8) string {
 	case TipoPersonagem:
 		caminho += pastaPersonagem
 		switch id {
-		case structs.PersonagemGuerreiro:
+		case consts.PersonagemGuerreiro:
 			caminho += "guerreiro"
 		}
 	/*-----		Inimigo		-----*/
 	case TipoInimigo:
 		caminho += pastaInimigo
 		switch id {
-		case structs.InimigoRato:
+		case consts.InimigoRato:
 			caminho += "rato"
-		case structs.InimigoCoelho:
+		case consts.InimigoCoelho:
 			caminho += "coelho"
-		case structs.InimigoLobo:
+		case consts.InimigoLobo:
 			caminho += "lobo"
 		}
 
@@ -58,7 +58,7 @@ func CriarCaminho(tipo int8, id int8) string {
 	case TipoItem:
 		caminho += pastaItem
 		switch id {
-		case structs.ItemPocao:
+		case consts.ItemPocao:
 			caminho += "pocao"
 		}
 	}
